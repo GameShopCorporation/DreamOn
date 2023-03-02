@@ -61,6 +61,8 @@ public class Poly {
         app.getRootNode().attachChild(node);
     }
 
+
+
     public void updateRender(){
 
         Vector3f arr[] = new Vector3f[vertices.size()];

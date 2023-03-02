@@ -23,14 +23,9 @@ import java.util.ArrayList;
  */
 public class AppMain extends SimpleApplication {
 
-    /**
-     * Release Variable Is For Google Play Release.
-     * False When Focusing On One Model.
-     * */
-    boolean release = true;
-
-    //BigArc bigArc = new BigArc(this, ColorRGBA.Black, new Vector3f(0, 0, 0), new Vector3f(4,0,0), new Vector3f (0,0,0));
-    JayRune jayRune;
+   /**
+    * This Is For Girls
+    * */
 
     @Override
     public void simpleInitApp() {
@@ -43,45 +38,23 @@ public class AppMain extends SimpleApplication {
         settings.setDepthBits(32);
         viewPort.setBackgroundColor(ColorRGBA.White);
 
-        //settings.setFrequency(120);
+        LyndenJayEvansJr lyndenJayEvansJr = new LyndenJayEvansJr(this);
 
-
-
-        if (release) {
-
-            //BigCircle bigCircle = new BigCircle(this, ColorRGBA.Black)
-            //BigArc bigArc = new BigArc(this, ColorRGBA.Black, new Vector3f(0, 0, 0), new Vector3f(4,0,0), new Vector3f (0,0,0));
-            jayRune = new JayRune(this);
-        } else {
-
-
-
-        }
+        
     }
 
 
     @Override
     public void simpleUpdate(float tpf) {
         //TODO: add update code
-        if (release) {
 
-
-        } else {
-            //chessTileBase = new ChessTileBase(this);
-            //chessTileBase.updateRender();
-        }
     }
 
     @Override
     public void simpleRender(RenderManager rm) {
         //TODO: add render code
 
-        if (release) {
-        jayRune.updateRender();
 
-        } else {
-
-        }
 
     }
 }
